@@ -1,0 +1,20 @@
+PODS:
+  - YoutubeKit (0.8.0)
+  - YouTubePlayer-Swift (1.0)
+
+DEPENDENCIES:
+  - YoutubeKit
+  - YouTubePlayer-Swift
+
+SPEC REPOS:
+  trunk:
+    - YoutubeKit
+    - YouTubePlayer-Swift
+
+SPEC CHECKSUMS:
+  YoutubeKit: 22d35bb9f52bf403cecf37424c67e3399ca4d412
+  YouTubePlayer-Swift: ae82f4bcb504162a872b852596a9dc1fa3828c34
+
+PODFILE CHECKSUM: a09617450b3751e97fbcfb35f8678e9fd97788e3
+
+COCOAPODS: 1.12.1
