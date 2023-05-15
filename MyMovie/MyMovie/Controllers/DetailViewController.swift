@@ -9,9 +9,8 @@ import UIKit
 import Kingfisher
 
 class DetailViewController: UIViewController {
-
+    
     var movies: Movies = []
-//    var categoryId: String?
     
     @IBOutlet weak var lblPrice: UILabel!
     
@@ -38,9 +37,9 @@ class DetailViewController: UIViewController {
         lblPrice.text = movie?.price
         
     }
-
     
-  
+    
+    
     func getIdVideo(videoURL: String){
         let pattern = "(?<=v=)[^&]+"
         let regex = try! NSRegularExpression(pattern: pattern, options: [])
@@ -50,24 +49,22 @@ class DetailViewController: UIViewController {
             idVideo = videoID
         }
     }
-
+    
     @IBAction func btnAdd(_ sender: UIButton) {
         let movie = Movie(info: "\(movie!.info)", name: "\(movie!.name)", avatar: "\(movie!.avatar)", price: "\(movie!.price)", link: "\(movie!.link)", id: "\(movie!.id)")
-            APIHandler().postMovie(movie: movie)
+        APIHandler().postMovie(movie: movie)
         lblTB.text = "Thêm thành công"
         
     }
     @IBAction func btnPlay(_ sender: Any) {
         guard let movie = movie else {
-                // handle nil case here
-                return
-            }
+            return
+        }
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-
-            let vc = storyboard.instantiateViewController(withIdentifier: "ViewControllerPlayVideo") as! ViewControllerPlayVideo
-            getIdVideo(videoURL: movie.link)
-            vc.idVideo = idVideo
-//            print(idVideo)
-        navigationController?.pushViewController(vc, animated: true)
+        
+        let vc = storyboard.instantiateViewController(withIdentifier: "ViewControllerPlayVideo") as! ViewControllerPlayVideo
+        getIdVideo(videoURL: movie.link)
+        vc.idVideo = idVideo
+        present(vc, animated: true)
     }
 }

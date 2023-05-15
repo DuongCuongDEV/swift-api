@@ -9,13 +9,8 @@ import UIKit
 
 protocol MovieViewDelegate: AnyObject {
     func clickPushDetail(movie: Movie)
- }
+}
 class HomeViewController: UIViewController {
-   
-    
-
-    
-    
     @IBOutlet weak var collectionView: UICollectionView! {
         didSet{
             collectionView.register(UINib(nibName: HeaderView.className, bundle: nil), forCellWithReuseIdentifier: HeaderView.className)
@@ -44,8 +39,6 @@ class HomeViewController: UIViewController {
             print(movieData)
         }
     }
-
-    
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -74,12 +67,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return cell
             
         }
-        
-        
-        
     }
-    }
-    
+}
+
 
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout {

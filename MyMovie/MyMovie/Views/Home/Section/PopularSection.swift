@@ -50,11 +50,10 @@ extension PopularSection: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PopularCollectionViewCell.className, for: indexPath) as! PopularCollectionViewCell
         
-        //        cell.layer.masksToBounds = true
-        cell.layer.cornerRadius = 10 // Chỉnh độ cong của góc
-        cell.layer.backgroundColor = UIColor.white.cgColor // Nếu không set màu background thì shadow không hiện
-        cell.layer.borderWidth = 0.1 // Nếu không set borderWidth thì shadow không hiện
-        cell.layer.borderColor = UIColor.clear.cgColor // Nếu không set borderColor thì shadow không hiện
+        cell.layer.cornerRadius = 10
+        cell.layer.backgroundColor = UIColor.white.cgColor
+        cell.layer.borderWidth = 0.1
+        cell.layer.borderColor = UIColor.clear.cgColor
         cell.layer.shadowColor = UIColor.black.cgColor
         cell.layer.shadowOffset = CGSize(width: 0, height: 2)
         cell.layer.shadowOpacity = 0.2
@@ -63,7 +62,6 @@ extension PopularSection: UICollectionViewDelegate, UICollectionViewDataSource {
         
         
         
-        //        cell.layoutIfNeeded()
         
         let url = URL(string: listItem[indexPath.row].avatar)
         cell.imgAvatar.kf.setImage(with: url)
@@ -81,12 +79,6 @@ extension PopularSection: UICollectionViewDelegate, UICollectionViewDataSource {
         let movie = self.listItem[indexPath.row]
         self.delegate?.clickPushDetail(movie: movie)
     }
-    
-    
-    
-    
-    
-    
 }
 
 extension PopularSection: UICollectionViewDelegateFlowLayout {

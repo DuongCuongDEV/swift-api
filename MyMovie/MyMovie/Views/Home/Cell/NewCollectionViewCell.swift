@@ -8,7 +8,7 @@
 import UIKit
 
 class NewCollectionViewCell: UICollectionViewCell {
-
+    
     @IBOutlet weak var lblPriceNew: UILabel!
     @IBOutlet weak var lblNameNew: UILabel!
     @IBOutlet weak var imgNew: UIImageView! {
@@ -20,5 +20,5 @@ class NewCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
 }

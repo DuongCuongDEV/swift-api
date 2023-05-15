@@ -9,7 +9,7 @@ import UIKit
 
 class NewSection: UICollectionViewCell {
     weak var delegate: MovieViewDelegate?
-
+    
     
     @IBOutlet weak var collectionView: UICollectionView!{
         didSet{
@@ -27,7 +27,6 @@ class NewSection: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        print("12345")
         self.getMoviesFromAPI()
         
     }
@@ -50,7 +49,7 @@ class NewSection: UICollectionViewCell {
 }
 
 extension NewSection: UICollectionViewDelegate, UICollectionViewDataSource {
-   
+    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.listItemControl.count
@@ -77,24 +76,14 @@ extension NewSection: UICollectionViewDelegate, UICollectionViewDataSource {
         
     }
     
-    
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let movie = self.listItem[indexPath.row]
+        let movie = self.listItemControl[indexPath.row]
         self.delegate?.clickPushDetail(movie: movie)
     }
-
-   
-    
-    
-    
-    
 }
 
 extension NewSection: UICollectionViewDelegateFlowLayout {
-
-
-
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
     }
@@ -102,7 +91,7 @@ extension NewSection: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 410, height: collectionView.frame.height - 20)
     }
-
+    
 }
 
 

@@ -11,11 +11,9 @@ import Alamofire
 class APIHandler {
     func getMovies(completion: @escaping (Movies) -> ()) {
         AF.request("https://6422f979001cb9fc2034ee99.mockapi.io/Movie", method: .get).responseDecodable(of: Movies.self) { (response) in
-//            print(response)
-
+            
             if let moviesResponse = response.value {
                 completion(moviesResponse)
-//                print(moviesResponse)
             }
         }
     }
@@ -30,11 +28,9 @@ class APIHandler {
             case .success(_):
                 print("Call API thành công")
                 break
-                // Xử lý dữ liệu trả về thành công
             case .failure(let error):
                 print(error.localizedDescription)
                 break
-                // Xử lý lỗi
             }
         }
     }
@@ -48,7 +44,7 @@ class APIHandler {
     }
     
     func deleteMovie(_id: String){
-            AF.request("https://6422f979001cb9fc2034ee99.mockapi.io/cartMovie/\(_id)", method: .delete).responseDecodable(of: Movie.self) { (response) in
-            }
+        AF.request("https://6422f979001cb9fc2034ee99.mockapi.io/cartMovie/\(_id)", method: .delete).responseDecodable(of: Movie.self) { (response) in
+        }
     }
 }

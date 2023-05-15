@@ -17,9 +17,9 @@ class SplashViewController: UIViewController {
     
 
     func pushTabBar() {
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyBoard.instantiateViewController(withIdentifier: TabBarViewController.className) as! TabBarViewController
-        self.navigationController?.pushViewController(vc, animated: true)
+//        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyBoard.instantiateViewController(withIdentifier: TabBarViewController.className) as! TabBarViewController
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
 
 }

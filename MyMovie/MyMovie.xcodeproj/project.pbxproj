@@ -18,7 +18,6 @@
 		438C77762A0957EE00E08C84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438C77742A0957EE00E08C84 /* Main.storyboard */; };
 		438C77782A0957F000E08C84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438C77772A0957F000E08C84 /* Assets.xcassets */; };
 		438C777B2A0957F000E08C84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438C77792A0957F000E08C84 /* LaunchScreen.storyboard */; };
-		438C778B2A095BD900E08C84 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438C778A2A095BD900E08C84 /* TabBarViewController.swift */; };
 		438C77912A09601200E08C84 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438C77902A09601200E08C84 /* HomeViewController.swift */; };
 		438C77932A09602200E08C84 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438C77922A09602200E08C84 /* ListViewController.swift */; };
 		438C77A92A09623000E08C84 /* NewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438C77A72A09623000E08C84 /* NewCollectionViewCell.swift */; };
@@ -38,7 +37,6 @@
 		438C77C52A0A50C700E08C84 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 438C77C32A0A50C700E08C84 /* HeaderView.xib */; };
 		438C77C82A0A774400E08C84 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 438C77C72A0A774400E08C84 /* Kingfisher */; };
 		43C25E8C2A113E970008C7E3 /* ViewControllerPlayVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C25E8A2A113E970008C7E3 /* ViewControllerPlayVideo.swift */; };
-		43E33E242A0C8E3000FD0113 /* cartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E33E232A0C8E3000FD0113 /* cartModel.swift */; };
 		AB0040F031259747BA12658D /* Pods_MyMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78DC75164D0BF0372AE51A5B /* Pods_MyMovie.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +54,6 @@
 		438C77772A0957F000E08C84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		438C777A2A0957F000E08C84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		438C777C2A0957F000E08C84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		438C778A2A095BD900E08C84 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		438C77902A09601200E08C84 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		438C77922A09602200E08C84 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		438C77A72A09623000E08C84 /* NewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -74,7 +71,6 @@
 		438C77C22A0A50C700E08C84 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		438C77C32A0A50C700E08C84 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		43C25E8A2A113E970008C7E3 /* ViewControllerPlayVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPlayVideo.swift; sourceTree = "<group>"; };
-		43E33E232A0C8E3000FD0113 /* cartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cartModel.swift; sourceTree = "<group>"; };
 		78DC75164D0BF0372AE51A5B /* Pods_MyMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D12B304DB0F816C9DEAB1113 /* Pods-MyMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMovie.debug.xcconfig"; path = "Target Support Files/Pods-MyMovie/Pods-MyMovie.debug.xcconfig"; sourceTree = "<group>"; };
 		D39BD8D0CC8F8CE84D73FC7D /* Pods-MyMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMovie.release.xcconfig"; path = "Target Support Files/Pods-MyMovie/Pods-MyMovie.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,7 +133,6 @@
 				438C77B92A09D31300E08C84 /* MovieModel.swift */,
 				438C77B72A09641B00E08C84 /* Enums.swift */,
 				438C77C02A0A44B000E08C84 /* NSObject+Extensions.swift */,
-				43E33E232A0C8E3000FD0113 /* cartModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -158,7 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				4337A1BF2A0B4B06005F144F /* SplashViewController.swift */,
-				438C778A2A095BD900E08C84 /* TabBarViewController.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -217,7 +211,6 @@
 			isa = PBXGroup;
 			children = (
 				438C77992A09610C00E08C84 /* Cell */,
-				438C77982A09610500E08C84 /* Section */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -244,13 +237,6 @@
 				438C77AC2A09624C00E08C84 /* PopularCollectionViewCell.xib */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		438C77982A09610500E08C84 /* Section */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Section;
 			sourceTree = "<group>";
 		};
 		438C77992A09610C00E08C84 /* Cell */ = {
@@ -413,8 +399,6 @@
 				4337A1D72A0B7A1F005F144F /* ListMovieCollectionViewCell.swift in Sources */,
 				4337A1C32A0B5333005F144F /* DetailViewController.swift in Sources */,
 				438C77912A09601200E08C84 /* HomeViewController.swift in Sources */,
-				438C778B2A095BD900E08C84 /* TabBarViewController.swift in Sources */,
-				43E33E242A0C8E3000FD0113 /* cartModel.swift in Sources */,
 				4337A1C02A0B4B06005F144F /* SplashViewController.swift in Sources */,
 				438C77A92A09623000E08C84 /* NewCollectionViewCell.swift in Sources */,
 				438C77932A09602200E08C84 /* ListViewController.swift in Sources */,

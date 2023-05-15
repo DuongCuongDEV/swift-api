@@ -8,7 +8,7 @@
 import UIKit
 
 class PopularCollectionViewCell: UICollectionViewCell {
-
+    
     @IBOutlet weak var lblMoviePrice: UILabel! {
         didSet {
             lblMoviePrice.layer.cornerRadius = 4

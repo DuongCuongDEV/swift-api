@@ -11,7 +11,7 @@ class HeaderView: UICollectionViewCell {
     
     @IBOutlet weak var imgBanner: UIImageView! {
         didSet {
-            imgBanner.layer.cornerRadius = 8 
+            imgBanner.layer.cornerRadius = 8
         }
     }
     
@@ -21,24 +21,21 @@ class HeaderView: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         imageArray.append("https://images.hdqwalls.com/wallpapers/the-batman-movie-poster-art-5k-ex.jpg")
         imageArray.append("https://cdn.wallpapersafari.com/17/9/N4g7lj.jpg")
         imageArray.append("https://wallpapershome.com/images/wallpapers/65-movie-3840x2160-adam-driver-4k-24468.jpg")
         
-        // Start the slideshow timer
         let _ = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
     }
     
     @objc func changeImage() {
-            if currentIndex == imageArray.count {
-                currentIndex = 0
-            }
-            
-            let url = URL(string: imageArray[currentIndex])
-            imgBanner.kf.setImage(with: url)
-            
-            currentIndex += 1
+        if currentIndex == imageArray.count {
+            currentIndex = 0
         }
+        
+        let url = URL(string: imageArray[currentIndex])
+        imgBanner.kf.setImage(with: url)
+        currentIndex += 1
+    }
     
 }
